@@ -11,7 +11,8 @@ To add the "WebP to PNG converter" program to the context menu in Windows, follo
 Windows Registry Editor Version 5.00
 
 [HKEY_CLASSES_ROOT\Directory\Background\shell\WebP to PNG converter]
-@="Convert WebP to PNG" "Icon"=""PATH TO THE CONVERTER ICO\icon.ico""
+@="Convert WebP to PNG"
+"Icon"=""PATH TO THE CONVERTER ICO\icon.ico""
 
 [HKEY_CLASSES_ROOT\Directory\Background\shell\WebP to PNG converter\command]
 @=""PATH TO THE CONVERTER EXE\converter.py""
