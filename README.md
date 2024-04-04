@@ -1,12 +1,12 @@
-# File Format Converter
+# Image Format Converter
 
-- Download link: [File-Format-Converter-Setup-v1.1-win32.zip](https://github.com/vorlie/FileFormatConverter/releases/download/v1.1/File-Format-Converter-Setup-v1.1-win32.zip.exe)
+- Download link: [Image-Format-Converter-Setup-v1.1-win32.zip](https://github.com/vorlie/FileFormatConverter/releases/download/v1.1/Image-Format-Converter-Setup-v1.1-win32.zip.exe)
     - The file above works only on Windows 10+
 
 # Using the Program
 ## 1. Launch the Program:
 
-- Double-click the converter.exe file to launch the "File Format Converter" program.
+- Double-click the converter.exe file to launch the "Image Format Converter" program.
 - **Context Menu Integration:** Additionally, a context menu item has been added for seamless conversion. Right-click on a supported image file, and you should see various conversion options in your context menu. If you are using Windows 11, click `Show more options` to access this feature.
 ## 2. Select Source File:
 
