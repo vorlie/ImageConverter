@@ -6,7 +6,7 @@
 ## Using the Program
 
 1. Double-click the `converter.exe` file to launch the "WebP to PNG converter" program.
-    - Also a context menu item has been added so you can right click and you should see "Convert WebP to PNG" in your context menu. If you are using Windows 11, click "Show more options" to see the option.
+    - Also a context menu item has been added so you can right click and you should see `Convert WebP to PNG` in your context menu. If you are using Windows 11, click `Show more options` to see the option.
 2. Click the button "Select WebP file" to select the WebP files you want to convert.
 3. The converted PNG file will be saved in the same directory as the original WebP file.
 
