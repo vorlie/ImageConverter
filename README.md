@@ -1,7 +1,7 @@
 # WebP to PNG Converter
 
-Download link: [WebP-to-PNG-Converter-win32.zip](https://github.com/vorlie/WebP_to_PNG_converter/releases/download/v1.0/WebP-to-PNG-Converter-win32.zip)
-The file above works only on Windows 10+
+- Download link: [WebP-to-PNG-Converter-win32.zip](https://github.com/vorlie/WebP_to_PNG_converter/releases/download/v1.0/WebP-to-PNG-Converter-win32.zip)
+    - The file above works only on Windows 10+
 
 ## Editing the Registry File * optional
 
