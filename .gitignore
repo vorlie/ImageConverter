@@ -1,5 +1,7 @@
 dist/
 build/
+Output/
+setup.iss
 8970989.png
 converter.spec
 
