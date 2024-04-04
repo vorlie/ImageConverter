@@ -1,6 +1,9 @@
 # WebP to PNG Converter
 
-## Editing the Registry File
+- Download link: [WebP-to-PNG-Converter-win32.zip](https://github.com/vorlie/WebP_to_PNG_converter/releases/download/v1.0/WebP-to-PNG-Converter-win32.zip)
+    - The file above works only on Windows 10+
+
+## Editing the Registry File * optional
 
 To add the "WebP to PNG converter" program to the context menu in Windows, follow these steps:
 
@@ -10,9 +13,12 @@ To add the "WebP to PNG converter" program to the context menu in Windows, follo
 ```
 Windows Registry Editor Version 5.00
 
-[HKEY_CLASSES_ROOT\Directory\Background\shell\WebP to PNG converter] @="Convert WebP to PNG" "Icon"=""PATH TO THE CONVERTER ICO\icon.ico""
+[HKEY_CLASSES_ROOT\Directory\Background\shell\WebP to PNG converter]
+@="Convert WebP to PNG"
+"Icon"=""PATH TO THE CONVERTER ICO\icon.ico""
 
-[HKEY_CLASSES_ROOT\Directory\Background\shell\WebP to PNG converter\command] @=""PATH TO THE CONVERTER EXE\converter.py""
+[HKEY_CLASSES_ROOT\Directory\Background\shell\WebP to PNG converter\command]
+@=""PATH TO THE CONVERTER EXE\converter.exe""
 ```
 
 3. Replace `"PATH TO THE CONVERTER ICO"` with the path to the folder containing the `icon.ico` file.
@@ -22,8 +28,8 @@ Windows Registry Editor Version 5.00
 
 ## Using the Program
 
-1. Double-click the `converter.py` file to launch the "WebP to PNG converter" program.
-  - If you did set up the context menu correctly, the program should appear in the context menu. Which should be much faster than opening the `converter.exe` file directly. Because you don't need to locate the file on your computer, it's much faster to open it using the context menu :3
+1. Double-click the `converter.exe` file to launch the "WebP to PNG converter" program.
+    - If the context menu setup was done correctly, you should see the "WebP to PNG converter" program in the context menu. Opening the program from the context menu is faster than locating and opening the `converter.exe` file directly on your computer. Simply right-click and select the program from the context menu for quick access.
 2. Click the button "Select WebP file" to select the WebP files you want to convert.
 3. The converted PNG file will be saved in the same directory as the original WebP file.
 

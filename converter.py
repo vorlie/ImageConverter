@@ -1,9 +1,6 @@
-import tkinter as tk
+import tkinter as tk, sys, os, ctypes
 from tkinter import filedialog
 from PIL import Image
-import sys
-import os
-import ctypes
 
 icon_path = os.path.join(os.path.dirname(__file__), "icon.ico")
 
