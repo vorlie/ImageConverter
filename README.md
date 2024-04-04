@@ -1,13 +1,28 @@
-# File Format Converter
+# Image Format Converter
 
-- Download link: [File-Format-Converter-Setup-v1.1-win32.zip](https://github.com/vorlie/FileFormatConverter/releases/download/v1.1/File-Format-Converter-Setup-v1.1-win32.zip)
+- Download link: [Image-Format-Converter-Setup-v1.1-win32.zip](https://github.com/vorlie/FileFormatConverter/releases/download/v1.1/Image-Format-Converter-Setup-v1.1-win32.zip.exe)
     - The file above works only on Windows 10+
 
-## Using the Program
+# Using the Program
+## 1. Launch the Program:
 
-1. Double-click the `converter.exe` file to launch the "WebP to PNG converter" program.
-    - Also a context menu item has been added so you can right click and you should see `Convert WebP to PNG` in your context menu. If you are using Windows 11, click `Show more options` to see the option.
-2. Click the button "Select WebP file" to select the WebP files you want to convert.
-3. The converted PNG file will be saved in the same directory as the original WebP file.
+- Double-click the converter.exe file to launch the "Image Format Converter" program.
+- **Context Menu Integration:** Additionally, a context menu item has been added for seamless conversion. Right-click on a supported image file, and you should see various conversion options in your context menu. If you are using Windows 11, click `Show more options` to access this feature.
+## 2. Select Source File:
 
-Enjoy converting your WebP images to PNG with ease using the context menu integration!
+- Click the button to select the source image file you wish to convert.
+## 3. Choose Conversion Format:
+
+- Once the source file is selected, a dropdown menu will display multiple conversion format options, including:
+    - PNG to JPEG
+    - JPEG to PNG
+    - JPEG to WebP
+    - WebP to JPEG
+    - PNG to WebP
+- Select the desired conversion format from the dropdown menu.
+## 4. Initiate Conversion:
+
+- After selecting the conversion format, click the "Convert" button to initiate the conversion process.
+## 5. Conversion Result:
+
+- The converted image file will be saved in the same directory as the original file, with the appropriate file format extension based on the chosen conversion format.
