@@ -7,7 +7,7 @@
 ## 1. Launch the Program:
 
 - Double-click the converter.exe file to launch the "File Format Converter" program.
-- **Context Menu Integration:** Additionally, a context menu item has been added for seamless conversion. Right-click on a supported image file, and you should see various conversion options in your context menu. If you are using Windows 11, click Show more options to access this feature.
+- **Context Menu Integration:** Additionally, a context menu item has been added for seamless conversion. Right-click on a supported image file, and you should see various conversion options in your context menu. If you are using Windows 11, click `Show more options` to access this feature.
 ## 2. Select Source File:
 
 - Click the button to select the source image file you wish to convert.
