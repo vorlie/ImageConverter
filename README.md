@@ -1,6 +1,6 @@
 # File Format Converter
 
-- Download link: [File-Format-Converter-Setup-v1.1-win32.zip](https://github.com/vorlie/FileFormatConverter/releases/download/v1.1/File-Format-Converter-Setup-v1.1-win32.zip)
+- Download link: [File-Format-Converter-Setup-v1.1-win32.zip](https://github.com/vorlie/FileFormatConverter/releases/download/v1.1/File-Format-Converter-Setup-v1.1-win32.zip.exe)
     - The file above works only on Windows 10+
 
 ## Using the Program
