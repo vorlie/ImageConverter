@@ -15,7 +15,7 @@ Windows Registry Editor Version 5.00
 "Icon"=""PATH TO THE CONVERTER ICO\icon.ico""
 
 [HKEY_CLASSES_ROOT\Directory\Background\shell\WebP to PNG converter\command]
-@=""PATH TO THE CONVERTER EXE\converter.py""
+@=""PATH TO THE CONVERTER EXE\converter.exe""
 ```
 
 3. Replace `"PATH TO THE CONVERTER ICO"` with the path to the folder containing the `icon.ico` file.
