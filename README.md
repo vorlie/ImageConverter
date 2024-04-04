@@ -25,7 +25,7 @@ Windows Registry Editor Version 5.00
 
 ## Using the Program
 
-1. Double-click the `converter.py` file to launch the "WebP to PNG converter" program.
+1. Double-click the `converter.exe` file to launch the "WebP to PNG converter" program.
   - If you did set up the context menu correctly, the program should appear in the context menu. Which should be much faster than opening the `converter.exe` file directly. Because you don't need to locate the file on your computer, it's much faster to open it using the context menu :3
 2. Click the button "Select WebP file" to select the WebP files you want to convert.
 3. The converted PNG file will be saved in the same directory as the original WebP file.
