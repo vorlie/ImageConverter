@@ -1,0 +1,7 @@
+dist/
+build/
+8970989.png
+converter.spec
+
+# Ignore .pyc files
+*.pyc
