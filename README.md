@@ -1,6 +1,6 @@
 # WebP to PNG Converter
 
-## Editing the Registry File
+## Editing the Registry File * optional
 
 To add the "WebP to PNG converter" program to the context menu in Windows, follow these steps:
 
