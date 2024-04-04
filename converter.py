@@ -86,7 +86,7 @@ def select_file_and_convert():
 def create_conversion_widgets():
     global conversion_var, conversion_menu, convert_button
     conversion_var.set("Select conversion format")
-    conversion_choices = ["WebP to JPG", "PNG to JPG", "JPG to WebP", "JPG to PNG", "PNG to WebP", "WebP to PNG"]
+    conversion_choices = ["WebP to JPEG", "PNG to JPEG", "JPEG to WebP", "JPEG to PNG", "PNG to WebP", "WebP to PNG"]
     conversion_menu = tk.OptionMenu(
         root, 
         conversion_var, 
@@ -109,13 +109,13 @@ def display_selected_file(file_path):
 
 def convert_file():
     conversion_choice = conversion_var.get()
-    if conversion_choice == "WebP to JPG":
+    if conversion_choice == "WebP to JPEG":
         convert_webp_to_jpg(file_path)
-    elif conversion_choice == "PNG to JPG":
+    elif conversion_choice == "PNG to JPEG":
         convert_png_to_jpg(file_path)
-    elif conversion_choice == "JPG to PNG":
+    elif conversion_choice == "JPEG to PNG":
         convert_jpg_to_png(file_path)
-    elif conversion_choice == "JPG to WebP":
+    elif conversion_choice == "JPEG to WebP":
         convert_jpg_to_webp(file_path)
     elif conversion_choice == "PNG to WebP":
         convert_png_to_webp(file_path)
@@ -134,7 +134,7 @@ root = tk.Tk()
 root.iconbitmap(icon_path)
 root.geometry("500x140")
 root.resizable("true", "false")
-root.title("File Format Converter")
+root.title("Image Format Converter")
 root.tk_setPalette(
     background=colors["bg"], 
     foreground=colors["fg"], 
