@@ -6,8 +6,19 @@
 # Using the Program
 ## 1. Launch the Program:
 
+### 1.2. First option
 - Double-click the `converter.exe` file to launch the "Image Format Converter" program.
 - **Context Menu Integration:** Additionally, a context menu item has been added for seamless conversion. ~~Right-click on a supported image file~~ Right-click anywhere, and you should see `Image Format Converter` in your context menu. If you are using Windows 11, click `Show more options` to access this feature.
+
+### 1.3. Second option
+If you dont want to install the app, you can run the source code directly. 
+- Download and install [Python 3.12.3](https://www.python.org/ftp/python/3.12.3/python-3.12.3-amd64.exe).
+    - Make sure to add Python to `PATH`.
+- Download this repository as `.zip` file. [Click here](https://github.com/vorlie/ImageFormatConverter/archive/refs/heads/main.zip) or clone it.
+    - Extract the `.zip`
+- Open `Terminal` or `Powershell` inside the extracted or cloned folder and run `pip install -r requirements.txt`. 
+- Then open `run_converter.bat` inside the extracted or cloned folder.
+
 ## 2. Select Source File:
 
 - Click the button to select the source image file you wish to convert.
