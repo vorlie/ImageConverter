@@ -6,11 +6,11 @@
 # Using the Program
 ## 1. Launch the Program:
 
-### 1.2. First option
+### 1. First option
 - Double-click the `converter.exe` file to launch the "Image Format Converter" program.
 - **Context Menu Integration:** Additionally, a context menu item has been added for seamless conversion. ~~Right-click on a supported image file~~ Right-click anywhere, and you should see `Image Format Converter` in your context menu. If you are using Windows 11, click `Show more options` to access this feature.
 
-### 1.3. Second option
+### 2. Second option
 If you dont want to install the app, you can run the source code directly. 
 - Download and install [Python 3.12.3](https://www.python.org/ftp/python/3.12.3/python-3.12.3-amd64.exe).
     - Make sure to add Python to `PATH`.
