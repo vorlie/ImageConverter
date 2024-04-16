@@ -1,6 +1,6 @@
 # Image Format Converter
 
-- Download link: [Image-Format-Converter-Setup-v1.1-win32.zip](https://github.com/vorlie/FileFormatConverter/releases/download/v1.1/Image-Format-Converter-Setup-v1.1-win32.zip.exe)
+- Download link: [Image-Format-Converter-Setup-v1.1-win32.exe](https://github.com/vorlie/FileFormatConverter/releases/download/v1.1/Image-Format-Converter-Setup-v1.1-win32.exe)
     - The file above works only on Windows 10+
 
 # Using the Program
