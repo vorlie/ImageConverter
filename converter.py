@@ -1,4 +1,4 @@
-import tkinter as tk, os, ctypes
+import tkinter as tk, ctypes, os
 from tkinter import filedialog
 from PIL import Image
 
@@ -8,71 +8,16 @@ def display_notification(title, message, duration=5):
     duration_seconds = int(duration * 1000)
     ctypes.windll.user32.MessageBoxW(0, message, title, 0x40 | 0x40000)
 
-def convert_webp_to_png(input_file_path):
+def convert_image(input_file_path, output_format):
     try:
         output_folder = os.path.dirname(input_file_path)
         file_name, file_extension = os.path.splitext(os.path.basename(input_file_path))
-        png_file_path = os.path.join(output_folder, f"{file_name}_converted.png")
-        im = Image.open(input_file_path).convert("RGB")
-        im.save(png_file_path, "PNG")
-        display_notification("Conversion Complete", f"WebP to PNG conversion successful.\nOutput: {png_file_path.replace('/', os.path.sep)}")
-    except Exception as e:
-        display_notification("Error", f"Error converting WebP to PNG: {e}")
-        
-def convert_png_to_webp(input_file_path):
-    try:
-        output_folder = os.path.dirname(input_file_path)
-        file_name, file_extension = os.path.splitext(os.path.basename(input_file_path))
-        webp_file_path = os.path.join(output_folder, f"{file_name}_converted.webp")
+        output_file_path = os.path.join(output_folder, f"{file_name}_converted.{output_format}")
         im = Image.open(input_file_path)
-        im.save(webp_file_path, "WEBP")
-        display_notification("Conversion Complete", f"PNG to WebP conversion successful.\nOutput: {webp_file_path.replace('/', os.path.sep)}")
+        im.save(output_file_path, output_format.upper())
+        display_notification("Conversion Complete", f"File converted successfully.\nOutput: {output_file_path.replace('/', os.path.sep)}")
     except Exception as e:
-        display_notification("Error", f"Error converting PNG to WebP: {e}")
-
-def convert_jpg_to_png(input_file_path):
-    try:
-        output_folder = os.path.dirname(input_file_path)
-        file_name, file_extension = os.path.splitext(os.path.basename(input_file_path))
-        png_file_path = os.path.join(output_folder, f"{file_name}_converted.png")
-        img = Image.open(input_file_path)
-        img.save(png_file_path, "PNG")
-        display_notification("Conversion Complete", f"JPG file converted to PNG successfully.\nOutput: {png_file_path.replace('/', os.path.sep)}")
-    except Exception as e:
-        display_notification("Error", f"Error converting JPG to PNG: {e}")
-
-def convert_png_to_jpg(input_file_path):
-    try:
-        output_folder = os.path.dirname(input_file_path)
-        file_name, file_extension = os.path.splitext(os.path.basename(input_file_path))
-        jpg_file_path = os.path.join(output_folder, f"{file_name}_converted.jpg")
-        img = Image.open(input_file_path)
-        img.save(jpg_file_path, "JPEG")
-        display_notification("Conversion Complete", f"PNG file converted to JPEG successfully.\nOutput: {jpg_file_path.replace('/', os.path.sep)}")
-    except Exception as e:
-        display_notification("Error", f"Error converting PNG to JPG: {e}")
-
-def convert_webp_to_jpg(input_file_path):
-    try:
-        output_folder = os.path.dirname(input_file_path)
-        file_name, file_extension = os.path.splitext(os.path.basename(input_file_path))
-        jpg_file_path = os.path.join(output_folder, f"{file_name}_converted.jpg")
-        img = Image.open(input_file_path)
-        img.save(jpg_file_path, "JPEG")
-        display_notification("Conversion Complete", f"WebP file converted to JPEG successfully.\nOutput: {jpg_file_path.replace('/', os.path.sep)}")
-    except Exception as e:
-        display_notification("Error", f"Error converting WebP to JPEG: {e}")
-
-def convert_jpg_to_webp(input_file_path):
-    try:
-        output_folder = os.path.dirname(input_file_path)
-        file_name, file_extension = os.path.splitext(os.path.basename(input_file_path))
-        webp_file_path = os.path.join(output_folder, f"{file_name}_converted.webp")
-        img = Image.open(input_file_path)
-        img.save(webp_file_path, "WEBP")
-        display_notification("Conversion Complete", f"JPEG file converted to WebP successfully.\nOutput: {webp_file_path.replace('/', os.path.sep)}")
-    except Exception as e:
-        display_notification("Error", f"Error converting JPEG to WebP: {e}")
+        display_notification("Error", f"Error converting file: {e}")
 
 def select_file_and_convert():
     global file_path
@@ -86,7 +31,7 @@ def select_file_and_convert():
 def create_conversion_widgets():
     global conversion_var, conversion_menu, convert_button
     conversion_var.set("Select conversion format")
-    conversion_choices = ["WebP to JPEG", "PNG to JPEG", "JPEG to WebP", "JPEG to PNG", "PNG to WebP", "WebP to PNG"]
+    conversion_choices = ["JPEG", "WebP", "PNG","GIF","TIFF","BPM"]
     conversion_menu = tk.OptionMenu(
         root, 
         conversion_var, 
@@ -109,18 +54,20 @@ def display_selected_file(file_path):
 
 def convert_file():
     conversion_choice = conversion_var.get()
-    if conversion_choice == "WebP to JPEG":
-        convert_webp_to_jpg(file_path)
-    elif conversion_choice == "PNG to JPEG":
-        convert_png_to_jpg(file_path)
-    elif conversion_choice == "JPEG to PNG":
-        convert_jpg_to_png(file_path)
-    elif conversion_choice == "JPEG to WebP":
-        convert_jpg_to_webp(file_path)
-    elif conversion_choice == "PNG to WebP":
-        convert_png_to_webp(file_path)
-    elif conversion_choice == "WebP to PNG":
-        convert_webp_to_png(file_path)
+    if not conversion_choice:
+        display_notification("Error", "Please select a file format.")
+        return
+    format_mapping = {
+        "JPEG": "jpeg",
+        "WebP": "webp",
+        "PNG": "png",
+        "GIF": "gif",
+        "TIFF": "tiff",
+        "BMP": "bmp"
+    }
+    if conversion_choice in format_mapping:
+        output_format = format_mapping[conversion_choice]
+        convert_image(file_path, output_format)
     else:
         display_notification("Error", "Invalid conversion choice. Please select a conversion format.")
 
