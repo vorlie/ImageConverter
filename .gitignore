@@ -1,9 +1,9 @@
-dist/
-build/
-Output/
+# Git Ignore List
 setup.iss
-8970989.png
-converter.spec
-
-# Ignore .pyc files
+release-windows/
+*.zip
+*.exe
 *.pyc
+*.obj
+*.pdb
+*.ilk

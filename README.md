@@ -3,10 +3,9 @@
 
 - Download and install [Python 3.12.3](https://www.python.org/ftp/python/3.12.3/python-3.12.3-amd64.exe).
     - Make sure to add Python to `PATH`.
-- Download this repository as `.zip` file. [Click here](https://github.com/vorlie/ImageFormatConverter/archive/refs/heads/main.zip) or clone it.
+- Download this repository as `.zip` file. [Click here](https://github.com/vorlie/ImageFormatConverter/releases/download/v1.0/release-windows.zip).
     - Extract the `.zip` file.
-- Open `Terminal` or `Powershell` inside the extracted or cloned folder and run `pip install -r requirements.txt`. 
-- Then open `run_converter.bat` inside the extracted or cloned folder.
+- Run `setup.exe`. If requirements are installed, then run `run_this.exe`. inside the extracted folder.
 
 ## 2. Select Source File:
 
