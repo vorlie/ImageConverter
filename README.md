@@ -6,6 +6,8 @@
 - Download this repository as `.zip` file. [Click here](https://github.com/vorlie/ImageFormatConverter/releases/download/v1.0/release-windows.zip).
     - Extract the `.zip` file.
 - Run `setup.exe`. If requirements are installed, then run `run_this.exe`. inside the extracted folder.
+    - **tria.ge** result: [https://tria.ge/240519-lyf9aada2w/behavioral1](https://tria.ge/240519-lyf9aada2w/behavioral1)
+
 
 ## 2. Select Source File:
 
