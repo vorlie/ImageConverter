@@ -30,8 +30,6 @@ The compiled executables for Windows are not included in the repository. Instead
 - **[Download ImageConverter.exe (GUI)](https://github.com/vorlie/ImageConverter/releases/download/v1.1/ImageConverterGUI.zip)**
 - **[Download ImageConverterCLI.exe (CLI)](https://github.com/vorlie/ImageConverter/releases/download/v1.1/ImageConverterCLI.exe)**
 
-Replace `<username>` and `<repository>` with your GitHub username and repository name.
-
 ## ImageConverter.exe (GUI)
 
 ### Features
