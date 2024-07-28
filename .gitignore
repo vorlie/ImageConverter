@@ -7,3 +7,5 @@ release-windows/
 *.obj
 *.pdb
 *.ilk
+trash/
+__pycache__/
