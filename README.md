@@ -42,8 +42,9 @@ The compiled executables for Windows are not included in the repository. Instead
 
 ### Running the GUI Application
 
-1. **Download the executable** from the GitHub Releases page.
-2. **Run the GUI Application** by double-clicking the `ImageConverter.exe` file.
+1. **Download the zip file** from the GitHub Releases page.
+2. **Extract the zip file**.
+3. **Run the GUI Application** by double-clicking the `ImageConverter.exe` file.
 
 ### Missing Icon
 
