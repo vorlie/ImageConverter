@@ -97,7 +97,7 @@ To contribute to the development or modify the applications:
 3. **Install Dependencies**:
 
     ```bash
-    pip install -r requirements.txt
+    pip install -r requirements.txt --ignore-requires-python
     ```
 
 4. **Run the Applications**:
