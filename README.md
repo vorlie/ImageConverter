@@ -27,7 +27,7 @@ The project directory contains:
 
 The compiled executables for Windows are not included in the repository. Instead, you can download them from the GitHub Releases page:
 
-- **[Download ImageConverter.exe (GUI)](https://github.com/vorlie/ImageConverter/releases/download/v1.1/ImageConverterGUI.zip)**
+- **[Download ImageConverter.zip (GUI)](https://github.com/vorlie/ImageConverter/releases/download/v1.1/ImageConverterGUI.zip)**
 - **[Download ImageConverterCLI.exe (CLI)](https://github.com/vorlie/ImageConverter/releases/download/v1.1/ImageConverterCLI.exe)**
 
 Replace `<username>` and `<repository>` with your GitHub username and repository name.
