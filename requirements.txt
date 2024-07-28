@@ -1,1 +1,3 @@
 pillow==10.2.0
+pyqt5==5.15.10
+pyqtdarktheme==2.1.0
