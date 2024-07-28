@@ -118,6 +118,11 @@ To contribute to the development or modify the applications:
 
     Use PyInstaller to bundle the applications into standalone executables.
 
+    If you do not have PyInstaller installed:
+    ```bash
+    pip install pyinstaller==6.6.0
+    ```
+
     - **For GUI Application**:
 
         ```bash
