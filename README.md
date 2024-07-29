@@ -1,4 +1,4 @@
-# Image Format Converter
+# Image Converter
 
 ## Overview
 
